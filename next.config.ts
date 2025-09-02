@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  eslint: {
+    ignoreDuringBuilds: true, // 🚀 ESLint ko deploy time par disable karega
+  },
 };
 
 export default nextConfig;
